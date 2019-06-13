@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="left"
+                android:text="Fence name : "
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:gravity="right"
+                android:id="@+id/input_name"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="left"
+                android:text="Fence radius : "
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:inputType="number"
+                android:gravity="right"
+                android:id="@+id/input_radius"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:gravity="left"
+                android:text="Fence dwell time: "
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:gravity="right"
+                android:id="@+id/input_dwell_time"
+                android:inputType="number"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/textLat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="Latitude"/>
+
+            <Button
+                android:text="Set point on map!"
+                android:layout_marginRight="20dp"
+                android:id="@+id/getMarkerLocation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+         <LinearLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+             <TextView
+                 android:id="@+id/textLong"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:textSize="15sp"
+                 android:text="Longitude"/>
+            <Button
+                android:text="Save fence"
+                android:layout_marginRight="20dp"
+                android:id="@+id/commitFence"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+         </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
